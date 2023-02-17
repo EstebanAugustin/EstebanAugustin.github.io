@@ -1,0 +1,87 @@
+@import url(https://fonts.bunny.net/css?family=alex-brush:400|caesar-dressing:400);
+
+body {
+  padding: 10px;
+  background: linear-gradient(#DBC8AA, #F4A84A);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 500px) {
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+
+  #tableau {
+    max-width: 75%;
+  }
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav ul li {
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  font-family: 'Caesar Dressing', display;
+}
+
+h1 {
+  color: #5A1518
+}
+
+h2 {
+  color: #F7220C
+}
+
+p, a {
+  font-family: Helvetica;
+}
+
+a {
+  text-decoration: None;
+}
+
+ul {
+  list-style-type: None;
+}
+
+nav ul li a {
+  color: #AF1714;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ab5554;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+}
+
+#tableau {
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  padding: 40px;
+}
