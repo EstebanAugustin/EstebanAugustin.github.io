@@ -10,7 +10,7 @@ header {
   margin-bottom: 50px;
 }
 
-@media (min-width: 500px) {
+@media (orientation: landscape) {
   nav ul {
     display: flex;
     justify-content: space-around;
