@@ -3,6 +3,7 @@
 body {
   padding: 10px;
   background: linear-gradient(#DBC8AA, #F4A84A);
+  background-attachment: fixed;
 }
 
 header {
@@ -85,3 +86,5 @@ footer {
   text-align: center;
   padding: 40px;
 }
+
+#map { height: 500px; }

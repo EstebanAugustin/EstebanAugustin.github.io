@@ -5,6 +5,12 @@
     <title>Les lamas</title>
     <meta name = "description" content = "lama">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+     crossorigin=""></script>
   </head>
   <body>
     <header>
@@ -33,7 +39,19 @@
         <img src="lama6.jpg" alt="lama">
       </div>
     </section>
+    <section id="carte">
+      <h2>Petite carte de là où habitent les lamas ^^</h2>
+      <div id="map"></div>
     <footer>
       <p>AUGUSTIN Esteban</p>
     </footer>
+
+    <script>
+      var map = L.map('map').setView([-13.163141, -72.544963], 13);
+      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+      }).addTo(map);
+    </script>
+  </body>
 </html>
