@@ -1,90 +1,72 @@
-@import url(https://fonts.bunny.net/css?family=alex-brush:400|caesar-dressing:400);
+html {
+	width: 100%;
+}
 
 body {
-  padding: 10px;
-  background: linear-gradient(#DBC8AA, #F4A84A);
-  background-attachment: fixed;
+	width: 100%;
+	margin: 0;
 }
 
 header {
-  text-align: center;
-  margin-bottom: 50px;
+	display: grid;
+	width: 100%;
+	min-height: 400px;
+	background: url('img/rouen_banner.jpg');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+	color:  white;
+	align-content: center;
 }
 
-@media (orientation: landscape) {
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-  }
-
-  #tableau {
-    max-width: 75%;
-  }
+#titre_principal, #sous_titre_principal {
+	display: inline-block;
+	vertical-align: top;
+	color:  black;
+	background-color: white;
+	border: 1px solid black;
+	padding: 2px;
 }
 
-nav ul {
-  padding: 0px;
-}
-
-nav ul li {
-  margin-bottom: 20px;
+#titre_principal {
+	font-size: 4em;
 }
 
 section {
-  margin-bottom: 20px;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding-top: 10px;
+	width: 980px;
+	border-top: 1px solid black;
 }
 
-h1, h2 {
-  font-family: 'Caesar Dressing', display;
+section h2 {
+	text-align: center;
 }
 
-h1 {
-  color: #5A1518
+.contenu_section {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 50% 50%;
 }
 
-h2 {
-  color: #F7220C
+.contenu_section > img {
+	width: 100%;
 }
 
-p, a {
-  font-family: Helvetica;
+.texte {
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
-a {
-  text-decoration: None;
+#mini_galerie {
+	display: grid;
+	width: 100%;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+	align-items: center;
 }
 
-ul {
-  list-style-type: None;
+#mini_galerie div img {
+	width: 90%;
 }
-
-nav ul li a {
-  color: #AF1714;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #ab5554;
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-}
-
-#tableau {
-  margin: 0 auto;
-  display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr 1fr;
-  align-items: center;
-  justify-items: center;
-}
-
-footer {
-  margin-top: 30px;
-  text-align: center;
-  padding: 40px;
-}
-
-#map { height: 500px; }

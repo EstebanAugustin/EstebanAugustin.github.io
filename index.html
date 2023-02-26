@@ -1,57 +1,89 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <title>Les lamas</title>
-    <meta name = "description" content = "lama">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-    crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-     crossorigin=""></script>
-  </head>
-  <body>
-    <header>
-      <div>
-        <h1>Les lamas</h1>
-        <p>Voici un super site sur les lamas.</p>
-      </div>
-      <nav>
-        <h2>Menu</h2>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="caracteristiques.html">Caractéristiques</a></li>
-          <li><a href="domestication.html">Domestication</a></li>
-          <li><a href="arts_culture.html">Arts et culture</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section id="photos">
-      <h2>Photos bien de lama ^^</h2>
-      <div id="tableau">
-        <img src="lama.jpg" alt="lama">
-        <img src="lama2.jpg" alt="lama">
-        <img src="lama3.jpg" alt="lama">
-        <img src="lama4.jpg" alt="lama">
-        <img src="lama5.jpg" alt="lama">
-        <img src="lama6.jpg" alt="lama">
-      </div>
-    </section>
-    <section id="carte">
-      <h2>Petite carte de là où habitent les lamas ^^</h2>
-      <div id="map"></div>
-    <footer>
-      <p>AUGUSTIN Esteban</p>
-    </footer>
-
-    <script>
-      var map = L.map('map').setView([-13.163141, -72.544963], 13);
-      L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 19,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-      }).addTo(map);
-    </script>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Rouen</title>
+	</head>
+	<body>
+		<header>
+			<div>
+				<div>
+					<h1 id="titre_principal">ROUEN</h1>
+				</div>
+				<div>
+					<h2 id="sous_titre_principal">Une super métropole normande !</h2>
+				</div>
+			</div>
+		</header>
+		<section id="histoire">
+			<h2>Histoire</h2>
+			<div class="contenu_section">
+				<img src="img/jeanne_darc.jpg" alt="bûcher de jeanne d'arc">
+				<div class="texte">
+					<p>Le gros de l'histoire à Rouen, c'est surtout Jeanne-d'Arc. Elle a été brûlée vive à Rouen le <strong>30 mai 1431</strong>. Sympa.</p>
+					<p>Du coup maintenant à Rouen il y a plein de trucs qui s'appellent Jeanne-d'Arc.</p>
+					<p>Comme:</p>
+					<ul>
+						<li>Le pont Jeanne-d'Arc</li>
+						<li>La tour Jeanne-d'Arc</li>
+						<li>La rue Jeanne-d'Arc</li>
+						<li>Le mémorial de Jeanne-d'Arc</li>
+						<li>La caserne Jeanne-d'Arc</li>
+						<li>La Croix Jeanne-d'Arc</li>
+						<li>L'église Sainte-Jeanne-d'Arc</li>
+						<li>La fontaine Jeanne-d'Arc</li>
+						<li>Et sûrement des fanatiques de Rouen qui ont appelé leur fille Jeanne</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="geographie">
+			<h2>Géographie sociale</h2>
+			<div class="contenu_section">
+				<div class="texte">
+					<p>Comme Paris, Rouen est divisé en deux par la Seine, avec d'un côté la &#x2728 Rive Droite &#x2728 et de l'autre les enfers (la Rive Gauche).</p>
+					<p>A part pour aller en boîte, les gens ne vont pas à "Rive Gauche" (zone rouge sur le plan) car ça fait peur. D'ailleurs, la boîte pour laquelle les gens traversent la Seine fait très peur aussi.</p>
+					<p>Sinon, pour les vrais soifards, le rendez-vous se situe en centre-ville ou sur les quais, de Rive Droite bien sûr. (zone bleue sur le plan). Il y a pleins de bars supers, par contre ils n'ont pas encore intégré le concept d'Happy Hour.</p>
+					<p>Il n'y a pas grand chose sur l'Ile Lacroix (en violet), si ce n'est la patinoire et la piscine. Si vous êtes en STAPS, vous êtes obligés d'aller voir les match de hockey, sinon vous mourrez apparemment.</p>
+					<p>Sur les hauteurs de Rouen, on a les étudiants riches et les jeunes cadres dynamiques de la Métropole. Ceux-là, vous êtes sûrs de ne jamais les voir à Rive Gauche.</p>
+					<p>Au Nord-Ouest de la ville, on a le plus gros campus de l'Université Rouen Normandie, le campus de Mont-Saint-Aignan. C'est le repère des étudiants la journée, avant que la nuit tombe et qu'ils effectuent leur exode vers les établissements de nuit du centre-ville.</p>
+				</div>
+				<img src="img/plan_rouen.png" alt="plan de rouen">
+			</div>
+		</section>
+		<section  id="loisirs">
+			<h2>Loisirs</h2>
+			<div class="contenu_section">
+				<div>
+					<div id="mini_galerie">
+						<div>
+							<img src="img/rue_gros_horloge.jpg" alt="rue du gros horloge">
+						</div>
+						<div>
+							<img src="img/hdv.jpg" alt="hotel de ville">
+						</div>
+						<div>
+							<img src="img/cathedrale.jpg" alt="cathedrale">
+						</div>
+						<div>
+							<img src="img/docks.jpg" alt="docks">
+						</div>
+					</div>
+				</div>
+				<div class="texte">
+					<p>Concrètement si vous voulez vous occuper la journée, vous pouvez... marcher. Si vous voulez "visiter Rouen", cela vous prendra approximativement 30 minutes, le temps de faire la Rue du Gros Horloge, l'Hotel de Ville et la Cathédrale.</p>
+					<p>Vous pouvez aussi faire les magasins aux Docks76 ou dans la Rue du Gros Horloge citée au-dessus.</p>
+					<p>Si vous voulez sortir la nuit, vous pouvez vous rendre dans les boîtes de nuit de Rouen, avec:</p>
+					<ul>
+						<li>La Suite si vous êtes un aventurier</li>
+						<li>Le Boho si vous vous êtes fait recalé de la Suite</li>
+						<li>Le So si vous êtes riche</li>
+						<li>Le XXL si vous êtes "ouvert"</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</body>
 </html>
